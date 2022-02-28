@@ -1,11 +1,8 @@
 package tests;
 
-
 import java.util.Set;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import pageObejects.LoginPage;
 import pageObejects.MenuPage;
 import pageObejects.ProductsPage;
