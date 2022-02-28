@@ -16,33 +16,33 @@ public class LoginPage extends BasePage {
 	@FindBy(css=".login_credentials>h4")
 	private WebElement IsItLoginPage;
  
-	public LoginPage(WebDriver driver) {
-		super(driver);
-		this.driver = driver;
-	}
+public LoginPage(WebDriver driver) {
+	super(driver);
+	this.driver = driver;
+}
 
 
-	public void login(String user,String passsword) {
-		fillText(userNameField, user);
-		fillText(passwordField, passsword);
-		click(loginBtn);
+public void login(String user,String passsword) {
+	fillText(userNameField, user);
+	fillText(passwordField, passsword);
+	click(loginBtn);
 	
-	}
+}
 
-	public String getErrorMsg() {
-		return getText(errorMsgLabel);
-	}
+public String getErrorMsg() {
+	return getText(errorMsgLabel);
+}
 
-	public void click() {
-		click(loginBtn);
-	}
+public void click() {
+	click(loginBtn);
+}
  
-	public boolean isItLoginPage() {
-		if (getText( IsItLoginPage).equalsIgnoreCase("Accepted usernames are:")) {
-			return true;
-		} else
-			return false;
-	}
+public boolean isItLoginPage() {
+	if (getText( IsItLoginPage).equalsIgnoreCase("Accepted usernames are:")) {
+	return true;
+	} else
+	return false;
+}
 	
 }
 
