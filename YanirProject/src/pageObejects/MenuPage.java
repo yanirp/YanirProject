@@ -42,20 +42,17 @@ public class MenuPage extends BasePage {
 		sleep(2000);
 		click(AboutBtn);
 			
-	
 	}
 		
 	public void twitter() {
 		scrollDown(1000);
 		click(twitterBtn);
-		sleep(2000);
-			
+		sleep(2000);		
 	}
 	
 	public void facebook() {
 		click(facebookBtn);
-		sleep(2000);
-			
+		sleep(2000);		
 	}
 	
 	public void linkedin() {
@@ -67,7 +64,6 @@ public class MenuPage extends BasePage {
 		click(closeBarMenuBtn);
 		
 	}
-		
 		
 }
 
